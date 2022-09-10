@@ -1,0 +1,101 @@
+@import "colors";
+
+.dashboard {
+  background-color: $pink;
+  width: 100%;
+  height: 100vh;
+  > main {
+    height: 100%;
+    background-color: white;
+    max-width: 900px;
+    margin: auto;
+
+    > article {
+      background-color: $dark;
+      padding: 2rem;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      > div {
+        background-color: white;
+        border-radius: 100%;
+        text-align: center;
+        height: 120px;
+        width: 120px;
+        padding: 2rem 0;
+        > h3 {
+          font: 800 2rem "Roboto";
+        }
+        > p {
+          font: 100 1.1rem "Roboto";
+        }
+      }
+    }
+
+    > section {
+      display: flex;
+      justify-content: space-between;
+      padding: 6rem;
+      > div {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        > a {
+          white-space: nowrap;
+          background-color: $dark;
+          color: white;
+          padding: 1rem;
+          width: 50%;
+          text-align: center;
+          border-radius: 5px;
+          margin: 1rem;
+          &:hover {
+            background-color: $reddark;
+          }
+        }
+      }
+
+      > aside {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .dashboard {
+    height: 100vmin;
+    > main > section {
+      padding: 2rem;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .dashboard {
+    height: unset;
+    min-height: 100vh;
+    > main {
+      > article {
+        flex-direction: column;
+        > div {
+          margin: 1rem;
+        }
+      }
+
+      > section {
+        flex-direction: column;
+        padding: 2rem;
+        > div {
+          width: 100%;
+          margin: 1rem 0;
+        }
+        > aside {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

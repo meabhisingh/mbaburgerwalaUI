@@ -1,0 +1,50 @@
+@import "colors";
+
+footer {
+  min-height: 300px;
+  background-color: $dark;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  color: white;
+  align-items: center;
+
+  h2 {
+    color: $red;
+    font-family: fantasy;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  p,
+  strong {
+    margin: 1rem;
+  }
+
+  aside {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h4 {
+      font-size: 1.1rem;
+    }
+
+    a {
+      margin: 0.5rem;
+      font-size: 2rem;
+      color: white;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
