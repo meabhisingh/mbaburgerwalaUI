@@ -10,10 +10,10 @@ const About = () => {
         <h1>About Us</h1>
 
         <article>
-          <h4>MBA Burger Wala</h4>
+          <h4>Food for life</h4>
           <p>
-            We are MBA Burger Wala. The place for most tasty burgers on the
-            enitre earth.
+            We are company of the people who love to serve the most delicious
+            food. The place for most tasty burgers on the enitre earth.
           </p>
 
           <p>
@@ -31,12 +31,12 @@ const About = () => {
           <article>
             <div>
               <img src={me} alt="Founder" />
-              <h3>Abhishek Singh</h3>
+              <h3>Anonymous</h3>
             </div>
 
             <p>
-              I am Abhishek Singh, the founder of MBA Burger Wala. Affiliated to
-              God Taste...
+              Anonymous,the founder of "Food for life". Affiliated to Good
+              Taste...
             </p>
           </article>
         </div>

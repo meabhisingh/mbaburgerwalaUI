@@ -19,7 +19,7 @@ const Home = () => {
     <>
       <section className="home">
         <div>
-          <motion.h1 {...options}>MBA Burger Wala</motion.h1>
+          <motion.h1 {...options}>Food for life</motion.h1>
           <motion.p
             {...options}
             transition={{
